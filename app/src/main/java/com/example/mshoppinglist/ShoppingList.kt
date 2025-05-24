@@ -42,6 +42,7 @@ import androidx.core.app.ActivityCompat
 import androidx.navigation.NavController
 import com.example.mshoppinglist.LocationUtils
 import com.example.mshoppinglist.LocationViewModel
+import com.example.mshoppinglist.MainActivity
 
 
 data class ShoppingItem(val id: Int,
@@ -59,6 +60,8 @@ fun ShoppingListApp(
     address: String
 
 ){
+    androidx.compose.material3.Text(text = "Hello from ShoppingListApp!\nAddress: $address")
+
     var sItems by remember{ mutableStateOf(listOf<ShoppingItem>()) }
     var showDialog by remember{ mutableStateOf(false)}
     var itemName by remember { mutableStateOf("") }

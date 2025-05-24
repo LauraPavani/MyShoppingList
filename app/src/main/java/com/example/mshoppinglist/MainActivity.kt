@@ -1,4 +1,4 @@
-package com.example.myshoppinglist
+package com.example.mshoppinglist
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,6 +22,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.mshoppinglist.LocationSelectionScreen
 import com.example.mshoppinglist.LocationUtils
 import com.example.mshoppinglist.LocationViewModel
+import com.example.myshoppinglist.ShoppingListApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
